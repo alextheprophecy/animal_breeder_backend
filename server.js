@@ -1,13 +1,16 @@
+const express = require('express');
+const cors = require('cors');
+const bodyParser = require('body-parser');
 const dotenv = require("dotenv") //setting environment variables s.a. secret key
-let express = require('express');
-let cors = require('cors');
-let bodyParser = require('body-parser');
-
 dotenv.config()
 
-const mongoose_conn = require("./database/mongoose_setup")
-
+//routes
 const userRoute = require('./routes/animal.route')
+//controllers
+const mongoose_cont = require("./controllers/mongoose.controller")
+const cloud_cont = require("./controllers/cloudinary.controller");
+const animal_cont = require("./controllers/animal.controller");
+
 
 const app = express();
 app.use(bodyParser.json());
@@ -16,13 +19,16 @@ app.use(bodyParser.urlencoded({
 }));
 app.use(cors());
 
-//routes
 app.use('/animal', userRoute)
 
 //404
 app.use((req, res, next) => {
     res.status(404).send('Error 404!')
 });
+
+//_saveAnimal("./public/images/frog_caterpillar.jpg", {parent_a: 12, parent_b: 23, name: "froggy"})
+//cloud_cont.uploadAnimalImage("./public/images/frog_caterpillar.jpg", 1234)
+animal_cont.test_child()
 
 const port = process.env.PORT || 4000;
 const server = app.listen(port, () => {

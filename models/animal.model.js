@@ -4,10 +4,14 @@ const AutoIncrement = require('mongoose-sequence')(mongoose);
 let AnimalSchema = new mongoose.Schema({
     name: {
         type: String,
+    },
+    sd_prompt: {
+        type: String,
         required: true
     },
-    description: {
-        type: String
+    image: {
+        type: String,
+        default: ""
     },
     parent_a : {
         type: Number,
