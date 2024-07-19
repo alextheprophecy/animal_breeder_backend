@@ -26,9 +26,6 @@ app.use((req, res, next) => {
     res.status(404).send('Error 404!')
 });
 
-//_saveAnimal("./public/images/frog_caterpillar.jpg", {parent_a: 12, parent_b: 23, name: "froggy"})
-//cloud_cont.uploadAnimalImage("./public/images/frog_caterpillar.jpg", 1234)
-animal_cont.test_child()
 
 const port = process.env.PORT || 4000;
 const server = app.listen(port, () => {

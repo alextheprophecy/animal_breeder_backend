@@ -20,6 +20,10 @@ let AnimalSchema = new mongoose.Schema({
     parent_b : {
         type: Number,
         required: true
+    },
+    has_avatar : {
+        type: Boolean,
+        default: false
     }
 }, {
     collection: 'animals'

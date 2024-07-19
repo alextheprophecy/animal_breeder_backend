@@ -1,0 +1,299 @@
+[{
+  "_id": {
+    "$oid": "6699026d2c1a8db22d360c8a"
+  },
+  "name": "test",
+  "sd_prompt": "Imagine a creature with the legs of a spider, the head of a dog, and a long snake tail, combined with the powerful body of a tiger and the majestic head of an eagle. Create a sideview picture showcasing the spider legs, dog face with cute eyes and a long snout, snake tail, tiger body with muscular legs, and eagle head with sharp beak and piercing eyes. Be creative in blending these diverse elements into a cohesive and visually compelling creature.",
+  "image": "http://res.cloudinary.com/duywg0gtu/image/upload/v1721303661/48.png",
+  "parent_a": 60,
+  "parent_b": 61,
+  "id": 48,
+  "__v": 0,
+  "has_avatar": true
+},
+{
+  "_id": {
+    "$oid": "66990ede73c8a837e98ef184"
+  },
+  "name": "test",
+  "sd_prompt": "Prompt for the child creature:\nA realistic sideview picture of an imaginary creature with the body of a tiger, the head of an eagle, spider legs, and a long black snake tail.",
+  "image": "http://res.cloudinary.com/duywg0gtu/image/upload/v1721306847/49.png",
+  "parent_a": 60,
+  "parent_b": 61,
+  "id": 49,
+  "__v": 0,
+  "has_avatar": true
+},
+{
+  "_id": {
+    "$oid": "66990f701f142dde75a6cd8e"
+  },
+  "name": "tiger_eagle",
+  "sd_prompt": "A realistic sideview picture of an imaginary creature with the head of an eagle and the body of a tiger. The eagle's head features its sharp beak, piercing eyes, and majestic feathers, seamlessly blending into the powerful, striped body of a tiger, complete with muscular legs and a long tail.",
+  "image": "http://res.cloudinary.com/duywg0gtu/image/upload/v1721306993/50.png",
+  "parent_a": 60,
+  "parent_b": 61,
+  "id": 50,
+  "__v": 0,
+  "has_avatar": true
+},
+{
+  "_id": {
+    "$oid": "669912a42402e09b9ee1ccb8"
+  },
+  "name": "frog_caterpillar",
+  "sd_prompt": "A realistic sideview picture of an imaginary creature with the head of a frog and the body of a caterpillar. The frog head has big shiny eyes and a wide frog mouth, the caterpillar body is bumpy and green, with many little legs.",
+  "id": 47,
+  "parent_b": 5,
+  "image": "https://res.cloudinary.com/duywg0gtu/image/upload/v1721307984/Animals/47.jpg",
+  "parent_a": 2,
+  "__v": 0,
+  "has_avatar": true
+},
+{
+  "_id": {
+    "$oid": "669915cc80d26ed51229f521"
+  },
+  "name": "test",
+  "sd_prompt": "(A realistic sideview picture of an imaginary creature with the head of an eagle and the body of a tiger. The creature has sharp claws and wings, combining the grace and ferocity of both the eagle and tiger.)",
+  "image": "http://res.cloudinary.com/duywg0gtu/image/upload/v1721308620/51.png",
+  "parent_a": 47,
+  "parent_b": 50,
+  "id": 51,
+  "__v": 0,
+  "has_avatar": true
+},
+{
+  "_id": {
+    "$oid": "6699171666c366131c7b3ebc"
+  },
+  "name": "test",
+  "sd_prompt": "A realistic sideview picture of an imaginary creature with the head of an eagle and the body of a caterpillar. The eagle's head features its sharp beak, piercing eyes, and majestic feathers, seamlessly blending into the bumpy, green body of a caterpillar, complete with many little legs.",
+  "image": "http://res.cloudinary.com/duywg0gtu/image/upload/v1721308951/52.png",
+  "parent_a": 47,
+  "parent_b": 50,
+  "id": 52,
+  "__v": 0,
+  "has_avatar": true
+},
+{
+  "_id": {
+    "$oid": "669926191ee8846cc247a7e9"
+  },
+  "name": "tiger_frog",
+  "sd_prompt": "A realistic sideview picture of an imaginary creature with the head of a frog and the body of a tiger. The frog head features big shiny eyes and a wide mouth, seamlessly blending into the powerful, striped body of a tiger, complete with muscular legs and a long tail.",
+  "image": "http://res.cloudinary.com/duywg0gtu/image/upload/v1721312793/55.png",
+  "parent_a": 47,
+  "parent_b": 50,
+  "id": 55,
+  "__v": 0,
+  "has_avatar": true
+},
+{
+  "_id": {
+    "$oid": "669934f25a18c59e57674883"
+  },
+  "name": "test",
+  "sd_prompt": "Imagine a creature with the head of a dog and the body of a caterpillar. The dog head has floppy ears and a cute expression, while the caterpillar body is segmented and colorful, with small legs along its sides.",
+  "image": "http://res.cloudinary.com/duywg0gtu/image/upload/v1721316594/56.png",
+  "parent_a": 47,
+  "parent_b": 48,
+  "id": 56,
+  "__v": 0,
+  "has_avatar": true
+},
+{
+  "_id": {
+    "$oid": "6699357e74af6b90d8a33900"
+  },
+  "name": "test",
+  "sd_prompt": "A realistic sideview picture of an imaginary creature with the head of an eagle and the body of a tiger. The creature has sharp claws and wings, combining the grace and ferocity of both the eagle and tiger.",
+  "image": "http://res.cloudinary.com/duywg0gtu/image/upload/v1721316734/57.png",
+  "parent_a": 47,
+  "parent_b": 51,
+  "id": 57,
+  "__v": 0,
+  "has_avatar": true
+},
+{
+  "_id": {
+    "$oid": "6699364274af6b90d8a33915"
+  },
+  "name": "test",
+  "sd_prompt": "Imagine a creature with the head of a frog and the body of a caterpillar. The frog head features big shiny eyes and a wide mouth, seamlessly blending into the colorful, segmented body of a caterpillar, with small legs along its sides.",
+  "image": "http://res.cloudinary.com/duywg0gtu/image/upload/v1721316930/58.png",
+  "parent_a": 55,
+  "parent_b": 56,
+  "id": 58,
+  "__v": 0,
+  "has_avatar": true
+},
+{
+  "_id": {
+    "$oid": "6699366774af6b90d8a3391d"
+  },
+  "name": "test",
+  "sd_prompt": "A realistic sideview picture of an imaginary creature with the head of a frog and the body of a tiger. The creature has big shiny eyes and a wide frog mouth, with sharp claws and a bumpy green body.",
+  "image": "http://res.cloudinary.com/duywg0gtu/image/upload/v1721316967/59.png",
+  "parent_a": 47,
+  "parent_b": 51,
+  "id": 59,
+  "has_avatar": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "669936c274af6b90d8a33925"
+  },
+  "name": "test",
+  "sd_prompt": "Imagine a creature with the head of a frog and the body of a tiger.",
+  "image": "http://res.cloudinary.com/duywg0gtu/image/upload/v1721317058/60.png",
+  "parent_a": 58,
+  "parent_b": 59,
+  "id": 60,
+  "__v": 0,
+  "has_avatar": true
+},
+{
+  "_id": {
+    "$oid": "669990a0b160ace8ba42a04f"
+  },
+  "name": "test",
+  "sd_prompt": "Imagine a creature with the head of a dog and the body of a caterpillar. The creature has floppy ears and a cute expression on its dog head, while its caterpillar body is segmented and colorful, with small legs along its sides.",
+  "image": "http://res.cloudinary.com/duywg0gtu/image/upload/v1721340065/61.png",
+  "parent_a": 48,
+  "parent_b": 56,
+  "id": 61,
+  "__v": 0,
+  "has_avatar": true
+},
+{
+  "_id": {
+    "$oid": "669990ffb160ace8ba42a05d"
+  },
+  "name": "test",
+  "sd_prompt": "Imagine a creature with the head of a dog and the body of a caterpillar. The creature has floppy ears and a cute expression on its dog head, while its caterpillar body is segmented and colorful, with small legs along its sides.",
+  "image": "http://res.cloudinary.com/duywg0gtu/image/upload/v1721340160/62.png",
+  "parent_a": 48,
+  "parent_b": 61,
+  "id": 62,
+  "__v": 0,
+  "has_avatar": true
+},
+{
+  "_id": {
+    "$oid": "6699920fd64ff43844a3070b"
+  },
+  "name": "test",
+  "sd_prompt": "Imagine a creature with the head of a dog and the body of a caterpillar. The creature has blended features of both animals, with a cute dog face and floppy ears combined with a colorful and segmented caterpillar body.",
+  "image": "http://res.cloudinary.com/duywg0gtu/image/upload/v1721340431/63.png",
+  "parent_a": 51,
+  "parent_b": 61,
+  "id": 63,
+  "__v": 0,
+  "has_avatar": true
+},
+{
+  "_id": {
+    "$oid": "669992a493c5ec79021ed938"
+  },
+  "name": "test",
+  "sd_prompt": "Imagine a creature with the head of a frog and the body of a dog. The creature has a frog's head with big shiny eyes and a wide mouth, combined with a dog's face and floppy ears, all seamlessly integrated with a smooth, colorful body.",
+  "image": "http://res.cloudinary.com/duywg0gtu/image/upload/v1721340581/64.png",
+  "parent_a": 58,
+  "parent_b": 63,
+  "id": 64,
+  "__v": 0,
+  "has_avatar": true
+},
+{
+  "_id": {
+    "$oid": "669992ff29ed1de0e2efac34"
+  },
+  "name": "test",
+  "sd_prompt": "Imagine a creature with the legs of a spider, the head of a dog, and a long snake tail, combined with the powerful body of a tiger and the majestic head of an eagle. This creature also has a shimmering blue extra set of wings, sprouting from its back, adding to its uniqueness and beauty.",
+  "image": "http://res.cloudinary.com/duywg0gtu/image/upload/v1721340672/65.png",
+  "parent_a": 48,
+  "parent_b": 64,
+  "id": 65,
+  "__v": 0,
+  "has_avatar": true
+},
+{
+  "_id": {
+    "$oid": "669993a9332b5ae3eb174e68"
+  },
+  "name": "test",
+  "sd_prompt": "Imagine a creature with the head of a dog, body of a tiger, legs of a spider, snake tail, and an additional set of shimmering purple wings.",
+  "image": "http://res.cloudinary.com/duywg0gtu/image/upload/v1721340842/66.png",
+  "parent_a": 60,
+  "parent_b": 65,
+  "id": 66,
+  "__v": 0,
+  "has_avatar": true
+},
+{
+  "_id": {
+    "$oid": "66999461827b3458fe4fbd8a"
+  },
+  "name": "test",
+  "sd_prompt": "Imagine a creature with the legs of a spider, the head of a dog, a long snake tail, the powerful body of a tiger, and the majestic head of an eagle. This creature also has an extra set of shimmering wings, sprouting from its back.",
+  "image": "http://res.cloudinary.com/duywg0gtu/image/upload/v1721341025/67.png",
+  "parent_a": 65,
+  "parent_b": 66,
+  "id": 67,
+  "__v": 0,
+  "has_avatar": true
+},
+{
+  "_id": {
+    "$oid": "669a4db5aadf37752f0bb0e5"
+  },
+  "name": "test",
+  "sd_prompt": "Imagine a creature with the head of a dog, the body of a caterpillar, the legs of a spider, a long snake tail, the powerful body of a tiger, and the majestic head of an eagle. This creature also has an extra set of shimmering wings, sprouting from its back.",
+  "image": "http://res.cloudinary.com/duywg0gtu/image/upload/v1721388470/68.png",
+  "parent_a": 56,
+  "parent_b": 67,
+  "has_avatar": true,
+  "id": 68,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "669a4e0c0fda327196798009"
+  },
+  "name": "test",
+  "sd_prompt": "A creature with the head of a frog and the body of a dog.",
+  "image": "http://res.cloudinary.com/duywg0gtu/image/upload/v1721388557/69.png",
+  "parent_a": 55,
+  "parent_b": 64,
+  "has_avatar": true,
+  "id": 69,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "669a4ee2321ef48ffdb07ada"
+  },
+  "name": "test",
+  "sd_prompt": "Imagine a creature with the head of a frog and the body of a caterpillar-dog.",
+  "image": "",
+  "parent_a": 58,
+  "parent_b": 64,
+  "has_avatar": true,
+  "id": 70,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "669a4fd7a2085e176acad9f2"
+  },
+  "name": "test",
+  "sd_prompt": "Imagine a creature with a head that combines features of both a frog and a dog, with big shiny eyes, a wide mouth, and floppy ears, all seamlessly integrated with a smooth, colorful body.",
+  "image": "http://res.cloudinary.com/duywg0gtu/image/upload/v1721389016/71.png",
+  "parent_a": 59,
+  "parent_b": 64,
+  "has_avatar": true,
+  "id": 71,
+  "__v": 0
+}]

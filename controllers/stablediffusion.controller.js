@@ -8,6 +8,8 @@ const replicate = new Replicate({
  * @param options
  * @return Promise<String[]> list of image result urls
  */
+
+//seed for pto0.4: 3914204369- cartoon
 const queryProteus = (prompt, new_options) => {
     const options = {seed:2736712215, outputs:2}
     Object.assign(options, new_options)
@@ -24,7 +26,7 @@ const queryProteus = (prompt, new_options) => {
                 num_outputs: options.outputs,
                 guidance_scale: 7.5,
                 apply_watermark: false,
-                negative_prompt: "worst quality, low quality, background, cartoon",
+                negative_prompt: "worst quality, low quality, background, cartoon, 3D render, blurry, bad art",
                 prompt_strength: 0.8,
                 num_inference_steps: 20
             }
