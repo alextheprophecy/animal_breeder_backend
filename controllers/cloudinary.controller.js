@@ -15,7 +15,7 @@ cloudinary.config({
 const uploadAnimalImage = (file, animalID, avatar_image= false) => {
     const fileName = avatar_image?`${animalID}-avatar`:animalID
     const folderName = "Animals"// avatar_image?"Avatars":"Animals"
-    const options = {asset_folder: folderName, use_filename: true, use_filename_as_display_name: true, public_id: fileName}
+    const options = {asset_folder: folderName, use_filename: true, use_filename_as_display_name: true, public_id: fileName, overwrite: false}
     return cloudinary.uploader.upload(file, options).then(d=> d.url);
 }
 

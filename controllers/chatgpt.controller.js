@@ -9,10 +9,11 @@ const queryChatGPT = (prompt) => {
 }
 
 const description = (args) => {
-    console.log("data:", JSON.stringify(args))
+    console.log("New Animal info: ", JSON.stringify(args))
+    return args
 }
 
-const askGPTDescribeImage = (imageURL, animalId) => {
+const askGPTDescribeImage = (imageURL) => {
     const detail = "low" //"low"
     const tools =  [
         {
@@ -30,11 +31,13 @@ const askGPTDescribeImage = (imageURL, animalId) => {
                         },
                         behaviour: {
                             "type": "string",
-                            "description": "Describe the creatures habitat, daily life and behaviour in a short paragraph"
+                            "description": "Describe the creatures habitat, daily life and behaviour in three brief sentences"
                         },
                         maxAge: {
                             "type": "number",
-                            "description": "An estimate of the life expectancy for the animal"
+                            "description": "An estimate of the life expectancy for the animal in years",
+                            "maximum": 100,
+                            "minimum": 1
                         },
                         hunger: {
                             "type": "number",

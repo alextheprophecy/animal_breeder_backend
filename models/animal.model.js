@@ -1,4 +1,4 @@
-const mongoose= require('mongoose');
+const {mongoose} = require("../controllers/mongoose.controller")
 const AutoIncrement = require('mongoose-sequence')(mongoose);
 
 let AnimalSchema = new mongoose.Schema({
@@ -31,10 +31,6 @@ let AnimalSchema = new mongoose.Schema({
         hunger: {
             type: Number
         }
-    },
-    has_avatar : {
-        type: Boolean,
-        default: false
     }
 }, {
     collection: 'animals'
