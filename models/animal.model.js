@@ -21,6 +21,17 @@ let AnimalSchema = new mongoose.Schema({
         type: Number,
         required: true
     },
+    info : {
+        behaviour: {
+            type: String
+        },
+        maxAge: {
+            type: Number
+        },
+        hunger: {
+            type: Number
+        }
+    },
     has_avatar : {
         type: Boolean,
         default: false

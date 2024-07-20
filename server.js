@@ -11,7 +11,6 @@ const mongoose_cont = require("./controllers/mongoose.controller")
 const cloud_cont = require("./controllers/cloudinary.controller");
 const animal_cont = require("./controllers/animal.controller");
 
-
 const app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
@@ -25,7 +24,6 @@ app.use('/animal', userRoute)
 app.use((req, res, next) => {
     res.status(404).send('Error 404!')
 });
-
 
 const port = process.env.PORT || 4000;
 const server = app.listen(port, () => {

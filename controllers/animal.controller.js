@@ -1,5 +1,5 @@
 const {queryProteus} = require("./stablediffusion.controller");
-const {queryChatGPT} = require("./chatgpt.controller");
+const {queryChatGPT, askGPTDescribeImage} = require("./chatgpt.controller");
 const {AnimalModel} = require("../models/animal.model");
 const {uploadAnimalImage} = require("./cloudinary.controller");
 const {ObjectId} = require("mongodb");
@@ -49,26 +49,22 @@ const _make_animal = (parent_a_data, parent_b_data) => {
         )
     })
 }
-
 const isCombinationNew = (parent_a_id, parent_b_id) => {
     [parent_a_id, parent_b_id] = orderParents(parent_a_id, parent_b_id)
     return AnimalModel.find({parent_a: parent_a_id, parent_b: parent_b_id}).then(a=> a.length===0)
 }
-
 const orderParents=(p_a, p_b)=> p_a>p_b ? [p_b, p_a] : [p_a, p_b]
 const isAnimalValid = (animalData) => {
     return animalData.sd_prompt && animalData.parent_a && animalData.parent_b
 }
-
-
 const getAnimalData = (id) => {
     return AnimalModel.findOne({id: id}).exec()
 }
-
 const getAllAnimals = (query={}) => {
     console.log(query)
     return AnimalModel.find(query).then(res => res.map(a => [a.image, a.id]))
 }
+
 /**
  * stores animal data in database, uploads image to cloudinary, saves image URL in database
  * @param image
@@ -78,8 +74,15 @@ const getAllAnimals = (query={}) => {
 const _saveAnimal = (image, animalData) => {
     return AnimalModel.create(animalData).then(a=>
         uploadAnimalImage(image, a.id).then(url =>
-            AnimalModel.findByIdAndUpdate(new ObjectId(a._id), {image: url}).exec()
-        )
+            //TODO: promise.all, with image data istead of url
+            Promise.resolve(
+                askGPTDescribeImage(url).on("functionCall", (params) => {
+                    const data = JSON.parse(params.arguments)
+                    console.log("got description!!: ", JSON.stringify(data))
+                    AnimalModel.findByIdAndUpdate(new ObjectId(a._id), {image: url, name: data.name,
+                        info:{ behaviour: data.behaviour, maxAge: data.maxAge, hunger: data.hunger}}).exec()
+                })
+            ))
     ).catch(console.log)
 }
 
