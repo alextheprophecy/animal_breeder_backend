@@ -62,7 +62,7 @@ const getAnimalData = (id) => {
 }
 const getAllAnimals = (query={}) => {
     console.log(query)
-    return AnimalModel.find(query).then(res => res.map(a => [a.image, a.id]))
+    return AnimalModel.find(query).then(res => res.map(a => [a.image, a.id, {...a.info, name:a.name}]))
 }
 
 /**

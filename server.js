@@ -10,6 +10,7 @@ const userRoute = require('./routes/animal.route')
 const mongoose_cont = require("./controllers/mongoose.controller")
 const cloud_cont = require("./controllers/cloudinary.controller");
 const animal_cont = require("./controllers/animal.controller");
+const {getAvatar} = require("./controllers/animal.controller");
 
 const app = express();
 app.use(bodyParser.json());
