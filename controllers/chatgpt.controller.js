@@ -31,7 +31,7 @@ const askGPTDescribeImage = (imageURL) => {
                         },
                         behaviour: {
                             "type": "string",
-                            "description": "Describe the creatures habitat, daily life and behaviour in three brief sentences"
+                            "description": "Describe the creatures habitat, rough survival and tough realistic life in three brief sentences."
                         },
                         maxAge: {
                             "type": "number",

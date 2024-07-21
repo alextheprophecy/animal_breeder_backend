@@ -12,12 +12,48 @@ const replicate = new Replicate({
 });
 
 
-router.post("/create", (req, res, next) => {
-    const parents = req.body.parents
-    animalController.make_child(parents[0], parents[1]).then(animal_data_formatted=>
-        res.send(animal_data_formatted)
-    )
+router.get("/create", (req, res, next) => {
+    res.writeHead(200, {
+        'Content-Type': 'application/json',
+        'Transfer-Encoding': 'chunked'
+    });
+    res.write("Creating a new Animal!");
+    const parents = req.query.parents
+    console.log("PARENTS:",parents)
+    animalController.make_child(parents[0], parents[1], res).then(animal_data_formatted => {
+        res.write(JSON.stringify(animal_data_formatted))
+        res.end()
+    })
 });
+
+router.get("/stream", (req, res) => {
+    console.log("YEsp")
+    res.writeHead(200, {
+        'Content-Type': 'text/plain',
+        'Transfer-Encoding': 'chunked'
+    });
+
+    console.log("YEsp")
+
+    res.write("Thinking...");
+    sendAndSleep(res, 1);
+})
+
+
+const sendAndSleep = function (response, counter) {
+    if (counter > 3) {
+        response.write("over!");
+        response.end()
+        response.send
+    } else {
+        response.write(" ;i=" + counter);
+        counter++;
+        setTimeout(function () {
+            sendAndSleep(response, counter);
+        }, 1000)
+    }
+}
+
 
 router.get("/all", (req, res, next) => {
     if(req.query.has_avatar)
